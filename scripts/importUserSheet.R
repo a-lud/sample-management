@@ -34,8 +34,6 @@ checkImport <- function(input, col_spec) {
   }
 }
 
-checkImport(input = '~/Desktop/sample-submission-template.csv', col_spec = col_spec)
-
 # Returns 'TRUE' if everything is OK
 checkNA <- function(tib) {
   na_lgl <- any(unlist(map(tib, ~{is.na(.x)})))
