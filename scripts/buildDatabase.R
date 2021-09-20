@@ -64,11 +64,3 @@ buildDatabase <- function(
 
   DBI::dbDisconnect(conn = db_con)
 }
-
-buildDatabase(
-  path_samplesheet = 'data/testing-samplesheet.csv',
-  path_col_spec_rds = 'data/template-sample-sheet-column-specification.rds',
-  path_db_location = 'data/testing-db',
-  str_db_name = 'testing-db',
-  force_overwrite = TRUE
-)
