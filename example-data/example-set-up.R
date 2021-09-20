@@ -20,5 +20,6 @@ buildDatabase(
   path_samplesheet = here('example-data', 'starting-samples.csv'),
   path_col_spec_rds = here('example-data', 'template-sample-sheet-column-specification.rds'),
   path_db_location = here('example-data', 'DB-directory'), 
-  str_db_name = 'DB-example'
+  str_db_name = 'DB-example',
+  force_overwrite = TRUE
 )
