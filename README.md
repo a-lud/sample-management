@@ -27,7 +27,7 @@ and wanted to build this for my lab-group. I've also not had much experience
 with building, interacting with or maintaining databases, so I have no expectation
 that how I've implemented *anything* is going to be best-practices.
 
-The code in this server has been written written with best intentions. I know I
+The code in this server has been written with best intentions. I know I
 could make a more modular application with Shiny modules, but the truth is that
 whilst I got many of the sidebar filters working, it was taking more time than
 I'd like to admit to get the application doing what I wanted. Consequently I
@@ -36,8 +36,8 @@ settled for the approach I've taken.
 Similarly, the database implementation code is very simple. I've essentially
 just looked at a few examples on the net and got something working that does
 what I want. My code is not perfect, but it's stable enough and does what I need
-it to do. I'm sure there are edge-cases that would bring everything crashing
-down, but so far I've been in the clear.
+it to do. I'm sure there are edge-cases (or not so edge-cases) that would bring
+everything crashing down, but so far I've been in the clear.
 
 ### Other Users Adapting This Code
 
@@ -47,7 +47,7 @@ own sample management include:
 
 - Hard-coded columns
 - Sidebar filters written specifically for the hard-coded columns
-- Non-modular design - a modular application may help with the issues above
+- Non-modular design - a modular application may help with the points above
 - Database management - `dbplyr` is a package I use heavily, but it is designed
 for database querying, not managing. As such, my code 'collects' the data from
 the DB, appends new samples then **overwrites** the existing database with the
@@ -89,7 +89,7 @@ data types expected in each column (integer, character, date)
 Fill out the `template-sample-sheet.csv` file with your own information. Best
 practices would be to require each field to have information. Currently I have
 not implemented hard-requirements on these columns. For right now, use your
-own judgement on what is required.
+own judgement on what fields are necessary and should have information.
 
 ### Step 2: Build a database
 
