@@ -161,4 +161,14 @@ can run the application using the following command (assuming we're in the
 > shiny::runApp('../sample-management')
 ```
 
+## The Application
+
+Below are a couple of screen shots of the application running. 
+
+![Application home screen][figure_home]
+
+![Plotting the samples using their latitude and logitude][figure_map]
+
 [exampleData]: https://github.com/a-lud/sample-management/blob/main/example-data/example-set-up.R
+[figure_home]: https://github.com/a-lud/sample-management/blob/main/docs/figures/app-home.png
+[figure_map]: https://github.com/a-lud/sample-management/blob/main/docs/figures/app-plot-samples.png
