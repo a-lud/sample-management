@@ -151,4 +151,14 @@ below, also found in the `server.R` script:
 col_spec <- readr::read_rds('/path/to/your-column-specification.rds')
 ```
 
+## Running the Application
+
+Now that we've configured the necessary files with our database information, we
+can run the application using the following command (assuming we're in the
+`sample-management` directory):
+
+```{r}
+> shiny::runApp('../sample-management')
+```
+
 [exampleData]: https://github.com/a-lud/sample-management/blob/main/example-data/example-set-up.R
