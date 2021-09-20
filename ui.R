@@ -1,4 +1,14 @@
 # UI ---
+suppressPackageStartupMessages({
+    library(tidyverse)
+    library(magrittr)
+    library(leaflet)
+    library(waiter)
+    library(shiny)
+    library(shinyWidgets)
+    library(shinydashboard)
+    library(shinydashboardPlus)
+})
 
 # Header
 header <- dashboardHeader(
