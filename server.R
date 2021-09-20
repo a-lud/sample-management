@@ -1,14 +1,3 @@
-suppressPackageStartupMessages({
-  library(tidyverse)
-  library(magrittr)
-  library(leaflet)
-  library(waiter)
-  library(shiny)
-  library(shinyWidgets)
-  library(shinydashboard)
-  library(shinydashboardPlus)
-})
-
 # Source accessory functions ---
 source('scripts/buildSampleTemplate.R')
 source('scripts/importUserSheet.R')
@@ -16,14 +5,16 @@ source('scripts/importUserSheet.R')
 # Pool connection - handles disconnect for us
 con <- pool::dbPool(
   drv = RSQLite::SQLite(),
-  dbname = 'data/testing-db/testing-db.sqlite'
+  dbname = 'example-data/DB-directory/DB-example.sqlite'
+)
+
+# Column specification
+col_spec <- readr::read_rds(
+  'example-data/template-sample-sheet-column-specification.rds'
 )
 
 # Server function ---
 server <- function(input, output, session) {
-  
-  col_spec <- readr::read_rds('data/template-sample-sheet-column-specification.rds')
-  
   # Convert connection to tibble - easy manipulation
   df <- dplyr::tbl(con, 'mandatory_information') %>%
     collect() %>%
