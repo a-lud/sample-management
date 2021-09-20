@@ -1,0 +1,4 @@
+sample_id,specimen_id,specimen_id_description,family,genus,species,common_name,collection_date,collector,life_stage,sex,country,state_region,location_text,decimal_latitude,decimal_longitude
+New1,XNP01,Museum A,FamilyXN,GenusTST,SpeciesNEW,New species,11/09/2021,Someone,Juvenile,male,New Place,New State,Grasslands,-35,138
+New2,XNP02,Museum A,FamilyXN,GenusTST,SpeciesNEW,New species,12/09/2021,Someone,adult,female,New Place,New State,Grasslands,-35.59152521,138.4268442
+New3,XNP03,Museum A,FamilyXN,GenusTST,SpeciesNEW,New species,13/09/2021,Someone,Juvenile,female,New Place,New State,Grasslands,-35.43051122,138.9557768

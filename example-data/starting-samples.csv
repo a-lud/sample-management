@@ -1,0 +1,16 @@
+sample_id,specimen_id,specimen_id_description,family,genus,species,common_name,collection_date,collector,life_stage,sex,country,state_region,location_text,decimal_latitude,decimal_longitude
+ID1,WAM1,Made up Museum,Family1,GenusX,SpeciesXX,CommonXXX,07/03/2011,Person 1,Adult,male,CountryA,StateA1,Arid desert,-28,133
+ID2,WAM2,Made up Museum,Family1,GenusX,SpeciesXX,CommonXXX,07/03/2011,Person 1,Adult,male,CountryA,StateA1,Arid desert,-26,130
+ID3,WAM3,Made up Museum,Family1,GenusX,SpeciesXX,CommonXXX,07/03/2011,Person 1,Juvenile,female,CountryA,StateA2,coastal waters,-32,115
+ID4,WAM4,Made up Museum,Family1,GenusX,SpeciesXX,CommonXXX,07/03/2011,Person 1,Juvenile,female,CountryA,StateA2,coastal waters,-35,117
+ID5,WAM5,Made up Museum,Family1,GenusX,SpeciesXX,CommonXXX,07/03/2011,Person 1,Adult,female,CountryA,StateA3,coastal waters,-31,129
+ID6,APH01,Other Institution,Family2,GenusY,SpeciesYY,CommonYYY,27/08/2002,Person 2,Adult,male,CountryB,StateB1,river,,
+ID7,APH02,Other Institution,Family2,GenusY,SpeciesYY,CommonYYY,27/08/2002,Person 2,Adult,male,CountryB,StateB1,river,,
+ID8,APH03,Other Institution,Family2,GenusY,SpeciesYY,CommonYYY,19/06/2002,Person 3,Adult,female,CountryC,StateC1,river,,
+ID9,APH04,Other Institution,Family2,GenusY,SpeciesYY,CommonYYY,19/06/2002,Person 3,Juvenile,female,CountryC,StateC2,Tropical rainforest,-16,145
+ID10,APH05,Other Institution,Family2,GenusY,SpeciesYY,CommonYYY,11/11/2003,Person 4,Adult,unknown,CountryB,StateB2,Tropical rainforest,-15,145
+ID11,2021SSS,Third organisation,Family1,GenusZ,SpeciesZZ,CommonZZZ,01/07/1999,Person 5,Juvenile,unknown,CountryD,StateD1,coastal waters,-14,135
+ID12,2021SSK,Third organisation,Family1,GenusZ,SpeciesZZ,CommonZZZ,01/07/1999,Person 5,Juvenile,unknown,CountryD,StateD3,coastal waters,-15,141
+ID13,2021PRD,Third organisation,Family1,GenusZ,SpeciesZZ,CommonZZZ,01/07/1999,Person 5,Adult,female,CountryD,StateD3,Lake,-28,137
+ID14,2021LMK,Third organisation,Family1,GenusZ,SpeciesZZ,CommonZZZ,21/09/2017,Person 6,Adult,female,CountryE,StateE1,Lake,-22,128
+ID15,2021MMK,Third organisation,Family1,GenusZ,SpeciesZZ,CommonZZZ,21/09/2017,Person 6,Adult,male,CountryE,StateE1,Lake,-22,128
