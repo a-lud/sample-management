@@ -156,7 +156,7 @@ server <- function(input, output, session) {
     
     # Check the data can be imported OK
     df_imports <- checkImport(
-      input = '~/Desktop/sample-submission-template.csv', 
+      input = input$tab_upload_sample_template$datapath, 
       col_spec = col_spec
     )
     
