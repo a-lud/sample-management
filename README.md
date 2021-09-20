@@ -62,7 +62,8 @@ time consuming than anything else.
 
 With that out of the way, I'll demonstrate below how to set up a basic database
 using the column specifications from this repository and then start up the
-application.
+application. The script used to build the example dataset can be found
+[here][exampleData] for reference.
 
 ### Step 1: Download a template file
 
@@ -149,3 +150,5 @@ below, also found in the `server.R` script:
 ```{r}
 col_spec <- readr::read_rds('/path/to/your-column-specification.rds')
 ```
+
+[exampleData]: https://github.com/a-lud/sample-management/blob/main/example-data/example-set-up.R
