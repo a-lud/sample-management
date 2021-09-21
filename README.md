@@ -71,7 +71,7 @@ If you do not already have a "database"" of samples (e.g. in a Excel spreadsheet
 or something...) ready to go, you can run the `exportEmptySampleSheet()` command
 to download a *CSV* template file that you can edit.
 
-```{r}
+```r
 exportEmptySampleSheet(
   path = '/path/to/outdir',
   filename = 'template-sample-sheet'       # Optional argument
@@ -99,7 +99,7 @@ a *SQLite* database using the sample sheet. In the scripts directory is the
 `buildDatabase.R` script which can be used to convert the sample *CSV* file into
 a *SQLite* database. It can be called like so
 
-```{r}
+```r
 buildDatabase(
   path_samplesheet = 'edited-samplesheet.csv',
   path_col_spec_rds = 'template-sample-sheet-column-specification.rds',
@@ -134,7 +134,7 @@ everything running.
 
 You'll need to set the path to your own databse file in the following code
 
-```{r}
+```r
 con <- pool::dbPool(
   drv = RSQLite::SQLite(),
   dbname = '/path/to/your-db.sqlite'
@@ -147,7 +147,7 @@ The path to the column-specification file is also needed. The application uses
 this object for validating incoming data. Simply change the path in the code
 below, also found in the `server.R` script:
 
-```{r}
+```r
 col_spec <- readr::read_rds('/path/to/your-column-specification.rds')
 ```
 
@@ -157,7 +157,7 @@ Now that we've configured the necessary files with our database information, we
 can run the application using the following command (assuming we're in the
 `sample-management` directory):
 
-```{r}
+```r
 > shiny::runApp('../sample-management')
 ```
 
